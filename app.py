@@ -11,5 +11,5 @@ f2 = st.number_input("Feature 2")
 f3 = st.number_input("Feature 3")
 
 if st.button("Predict"):
-    prediction = model.predict([[f1,f2,f3]])
+    prediction = model.predict([[float(f1),float(f2),float(f3)]])
     st.write("Prediction:",prediction)
